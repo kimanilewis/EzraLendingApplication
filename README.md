@@ -27,6 +27,9 @@ EzraLendingApp is a simplified Java-based lending application built with Spring 
 
 ### Database Migrations:
 - Manage all schema changes with Liquibase YAML changelogs.
+- All migrations are defined in YAML changelogs located in the `src/main/resources/db/changelog` directory. 
+- To run migrations, simply start the application, and Liquibase will automatically apply any pending changes.
+
 
 ## Architecture Overview
 
@@ -114,5 +117,4 @@ docker-compose up --build
 Database Migrations
 
 EzraLendingApp uses Liquibase to manage database schema changes.
-All migrations are defined in YAML changelogs located in the `src/main/resources/db/changelog` directory. 
-To run migrations, simply start the application, and Liquibase will automatically apply any pending changes.
+
