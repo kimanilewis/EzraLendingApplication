@@ -111,4 +111,8 @@ docker-compose up --build
 
 ## Database Migrations
 
-The application uses Liquibase to manage schema changes. Migrations are defined in YAML changelogs:
+Database Migrations
+
+EzraLendingApp uses Liquibase to manage database schema changes.
+All migrations are defined in YAML changelogs located in the `src/main/resources/db/changelog` directory. 
+To run migrations, simply start the application, and Liquibase will automatically apply any pending changes.
